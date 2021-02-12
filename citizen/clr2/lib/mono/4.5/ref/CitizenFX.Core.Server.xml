@@ -6745,6 +6745,11 @@
             See also: [Resource manifest](https://docs.fivem.net/resources/manifest/)
             </summary>
         </member>
+        <member name="F:CitizenFX.Core.Native.Hash.GET_PLAYER_CAMERA_ROTATION">
+            <summary>
+            Gets the current camera rotation for a specified player. This native is used server side when using OneSync.
+            </summary>
+        </member>
         <member name="F:CitizenFX.Core.Native.Hash.GET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER">
             <summary>
             A getter for [SET_PLAYER_MELEE_WEAPON_DAMAGE_MODIFIER](#\_0x4A3DC7ECCC321032).
@@ -8187,6 +8192,17 @@
             <param name="metadataKey">
             The key to look up in the resource manifest.
             </param>
+        </member>
+        <member name="M:CitizenFX.Core.Native.API.GetPlayerCameraRotation(System.String)">
+            <summary>
+            Gets the current camera rotation for a specified player. This native is used server side when using OneSync.
+            </summary>
+            <param name="playerSrc">
+            The player handle.
+            </param>
+            <returns>
+            The player's camera rotation. Values are in radians.
+            </returns>
         </member>
         <member name="M:CitizenFX.Core.Native.API.GetPlayerMeleeWeaponDamageModifier(System.Int32)">
             <summary>
